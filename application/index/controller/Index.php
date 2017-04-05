@@ -9,6 +9,7 @@ use app\index\model\Lists;
 class Index extends Controller
 {
 
+	private $path='/MessageBoard';
 	public function index(){
 		$lists=Lists::paginate(5);
 		$this->assign('list',$lists);
@@ -32,7 +33,7 @@ class Index extends Controller
 		$comment->create_time=time();
 
 		if($comment->save()){
-			$this->success('添加评论成功！','/tp5/read/'.$id);
+			$this->success('添加评论成功！',$this->path.'/read/'.$id);
 		}else{
 			$this->error('添加评论失败！');
 		}
@@ -43,7 +44,7 @@ class Index extends Controller
 		if($article){
 			$article->delete();
 			$article->comments()->delete();
-			$this->success('删除记录成功！','/tp5');
+			$this->success('删除记录成功！',$this->path);
 		}else{
 			$this-error('没有要删除的记录！');
 		}
@@ -68,7 +69,7 @@ class Index extends Controller
 			$this->error('请输入标题和内容！');
 		}
 		if($article->save($data)){
-			$this->success('留言发布成功！','/tp5');
+			$this->success('留言发布成功！',$this->path);
 		}else{
 			$this->error('留言发布失败！');
 		}
