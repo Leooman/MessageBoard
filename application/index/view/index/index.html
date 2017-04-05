@@ -1,0 +1,30 @@
+<!doctype html>
+<html>
+{include file='index/header' title='Thinkphp 5.0 留言板'}
+<body>
+<div class="container" style="margin-top:20px;">
+{include file='index/contact'}
+	
+    <table class="table">
+    	<tr>
+        	<td>编号</td>
+            <td>标题</td>
+            <td>评论</td>
+            <td>发布日期</td>
+            <td>操作</td>
+        </tr>
+        {volist name='list' id='v'}
+        <tr>
+        	<td>{$v.id}</td>
+            <td><a href="/tp5/read/{$v.id}">{$v.title}</a></td>
+            <td>20</td>
+            <td>{$v.create_time}</td>
+            <td> <a href="/tp5/delete/{$v.id}" class="btn btn-danger">删除</a></td>
+        </tr>
+        {/volist}
+    </table>
+    {$list->render()}
+
+</div>
+</body>
+</html>
