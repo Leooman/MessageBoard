@@ -1,7 +1,7 @@
 <nav class="navbar navbar-default">
   <div class="container-fluid">
 	  <div class="navbar-header">
-      <a class="navbar-brand" href="#">DaWang 留言本</a>
+      <a class="navbar-brand" href="#">Leooman 留言本</a>
     </div>
     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
       <ul class="nav navbar-nav">
@@ -11,9 +11,14 @@
       </ul>
       
       <ul class="nav navbar-nav navbar-right">
-      	<li><a href="#">注册</a></li>
-        <li><a href="#">登录</a></li>
-        <li><a href="#">QQ:228392101</a></li>
+        {if condition="$name"}
+        <li><a href="#">欢迎您！{$name}</a></li>
+        <li><a href="__ROOT__/out">退出</a></li>
+        {else/}
+      	<li><a href="__ROOT__/regist">注册</a></li>
+        <li><a href="__ROOT__/login">登录</a></li>
+        {/if}
+        <li><a href="#">QQ:351234955</a></li>
         
       </ul>
     </div><!-- /.navbar-collapse -->

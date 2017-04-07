@@ -25,4 +25,9 @@ return [
     'log_write'    => [],
     // 应用结束
     'app_end'      => [],
+
+    // 行为与标签绑定
+    'CheckAuth'    => [
+        'app\\index\\behavior\\UserCheck'
+    ]
 ];

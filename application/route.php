@@ -21,5 +21,11 @@ return [
    'addcomment/:id'=>'index/addcomment',
    'delete/:id'=>'index/delete',
    'add'=>'index/add',
-   'addarticle'=>'index/addarticle'
+   'out'=>'index/out',
+   'check'=>'index/check',
+   'addarticle'=>'index/addarticle',
+    'login'=>'login/index',
+    'login_submit'=>'login/login',
+    'regist'=>'regist/index',
+    'regist_submit'=>'regist/regist'
 ];
