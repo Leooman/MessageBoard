@@ -16,7 +16,6 @@ class login extends Controller{
 				'user_name' => $user_name,
 				'UserPassward' => $user_passwd
 			]);
-
 		Session::set('name',$user_name);
 		if($user){
 			return $this->success('登录成功！','/MessageBoard');

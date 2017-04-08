@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Host: 127.0.0.1
--- Generation Time: 2017-04-07 15:37:14
+-- Generation Time: 2017-04-08 08:35:50
 -- 服务器版本： 10.1.9-MariaDB
 -- PHP Version: 5.6.15
 
@@ -88,7 +88,8 @@ INSERT INTO `comment` (`id`, `article_id`, `username`, `content`, `create_time`,
 (18, 7, 'CC我又梦见你', '巴米扬算什么么，聂人王和雄霸在乐山大佛头顶上打过架，巴米扬有什么事迹可传', 1491571927, 0),
 (19, 7, '西蜀之去南海', '只是说造像的话，好像狮身人面更大', 1491571950, 0),
 (20, 8, '权利_如此卑微', '我猜想资料贴或学术贴如果理论性太强\r\n可能大家的兴致就不高\r\n因此希望借此贴以一个不一样的方式\r\n分享那些心理学的小知识\r\n我会以写一段文字，对应一段原理解释的形式来完成这篇贴子\r\n文字的风格和形式不定\r\n本贴所有文字部分除注明出处外都是原创\r\n原理部分会结合我的所学并查阅资料进行整理\r\n如果想要转载，请先征得我的同意\r\n祝你看帖愉快\r\n（我不介意插楼，请随意）', 1491572028, 0),
-(21, 8, '权利_如此卑微', '【1】\r\n我和你曾分散在世界上的两个角落，没有任何交集。有一天你闯入我的视线，我却仿佛看不见。因为你身上的味道沁人心脾，我闭上眼，贪婪地呼吸，那也许是灵魂深处最原始的香气。但是当我睁开双眼，却发现你已经不见了，此地空留你的余香。我每天都想见到你。\r\n让我惊喜的是，你每天都会按时出现。终于有一天，我忍不住张开双臂拥抱你，再也不愿分离。\r\n我们相爱了。我终于知道，什么叫做一日不见，如隔三秋。你太可爱了，哪里都可爱。\r\n“他身上好像没有味道了。”某天我听到这句话，错愕地站在原地。我牵起你的手，把头靠近你的胸口，深呼吸。果然，什么味道也没有了。可是为什么，我的手还紧紧地攥着你的手，我也不愿抬起头。我听着你的心跳。\r\n我现在爱你，好像和香气没关系。', 1491572058, 0);
+(21, 8, '权利_如此卑微', '【1】\r\n我和你曾分散在世界上的两个角落，没有任何交集。有一天你闯入我的视线，我却仿佛看不见。因为你身上的味道沁人心脾，我闭上眼，贪婪地呼吸，那也许是灵魂深处最原始的香气。但是当我睁开双眼，却发现你已经不见了，此地空留你的余香。我每天都想见到你。\r\n让我惊喜的是，你每天都会按时出现。终于有一天，我忍不住张开双臂拥抱你，再也不愿分离。\r\n我们相爱了。我终于知道，什么叫做一日不见，如隔三秋。你太可爱了，哪里都可爱。\r\n“他身上好像没有味道了。”某天我听到这句话，错愕地站在原地。我牵起你的手，把头靠近你的胸口，深呼吸。果然，什么味道也没有了。可是为什么，我的手还紧紧地攥着你的手，我也不愿抬起头。我听着你的心跳。\r\n我现在爱你，好像和香气没关系。', 1491572058, 0),
+(23, 4, '永恒', '测试一下', 1491572799, 0);
 
 -- --------------------------------------------------------
 
@@ -98,24 +99,17 @@ INSERT INTO `comment` (`id`, `article_id`, `username`, `content`, `create_time`,
 
 CREATE TABLE `user` (
   `user_id` int(10) NOT NULL,
-  `user_name` varchar(20) NOT NULL,
-  `UserSex` int(1) NOT NULL,
-  `UserTel` int(11) NOT NULL,
+  `user_name` varchar(10) NOT NULL,
   `UserEmail` varchar(255) NOT NULL,
-  `UserAddress` varchar(255) NOT NULL,
-  `UserBirth` varchar(255) NOT NULL,
-  `UserJoinTime` varchar(255) NOT NULL,
-  `UserPassward` varchar(255) NOT NULL,
-  `UserSignature` varchar(255) NOT NULL,
-  `UserHobby` varchar(255) NOT NULL
+  `UserPassward` varchar(255) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
 -- 转存表中的数据 `user`
 --
 
-INSERT INTO `user` (`user_id`, `user_name`, `UserSex`, `UserTel`, `UserEmail`, `UserAddress`, `UserBirth`, `UserJoinTime`, `UserPassward`, `UserSignature`, `UserHobby`) VALUES
-(1, 'leooman', 1, 0, '351234955@qq.com', '', '', '2017-04-07', '123456', '', '');
+INSERT INTO `user` (`user_id`, `user_name`, `UserEmail`, `UserPassward`) VALUES
+(1, 'leooman', '351234955@qq.com', '123456');
 
 --
 -- Indexes for dumped tables
@@ -147,12 +141,12 @@ ALTER TABLE `user`
 -- 使用表AUTO_INCREMENT `article`
 --
 ALTER TABLE `article`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=10;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=9;
 --
 -- 使用表AUTO_INCREMENT `comment`
 --
 ALTER TABLE `comment`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=23;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=24;
 --
 -- 使用表AUTO_INCREMENT `user`
 --

@@ -38,7 +38,7 @@ class Index extends Controller
 
 	public function out(){
 		Session::clear();
-		return $this->success('退出成功');
+		return $this->success('退出成功',$this->path);
 	}
 	public function read($id){
 		$this->check();
