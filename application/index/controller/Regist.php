@@ -68,7 +68,7 @@ class Regist extends Controller{
 	    return $this->error($validate->getError());
 	}else{
 		if ($user->save($data)) {
-	      return $this->success('注册成功','/MessageBoard/login');
+	      return $this->success('注册成功','/MessageBoard/public/login');
 	    } else {
 	      return $this->error('注册失败');
 	    }

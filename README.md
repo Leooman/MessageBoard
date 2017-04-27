@@ -62,11 +62,6 @@ www  WEB部署目录（或者子目录）
 ````
 git clone git@github.com:Leooman/MessageBoard.git
 ````
-- 安装think-captcha扩展包
-
-`composer require topthink/think-captcha`
-
-或者直接导入官网5.0完整版的vendor文件夹
 
 - 数据库配置
 
