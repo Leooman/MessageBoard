@@ -9,7 +9,7 @@ class UserCheck
 {
 	use \traits\controller\Jump;
 	public function run(&$params){
-		return $this->error('请登录！','/MessageBoard/login');
+		return $this->error('请登录！','/MessageBoard/public/login');
 	}
 	
 }

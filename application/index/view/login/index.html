@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 <title>登录</title>
 <link rel="stylesheet" href="https://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-<link rel="stylesheet" href="__PUBLIC__/css/login.css">
+<link rel="stylesheet" href="__STATIC__/css/login.css">
 </head>
 <body>
 <div class="login-container" style="height:100%">
@@ -47,6 +47,17 @@
                            autocomplete="off"
                            class="login-input password"
                            placeholder="请输入密码"/>
+                </li>
+                <li>
+                  <input required="required"
+                           pattern="^\S{4}$"
+                           title="请输入4位字符"
+                           type="vertify"
+                           name="user_vertify"
+                           autocomplete="off"
+                           class="login-input vertify"
+                           placeholder="请输入验证码"/>
+                  <img src="{:captcha_src()}" onclick="this.src='{:captcha_src()}?x='+Math.random();" />
                 </li>
                 <li class="text-center">
                     <button type="submit" class="layui-btn">立 即 登 入</button>

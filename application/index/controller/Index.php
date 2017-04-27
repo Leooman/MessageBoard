@@ -11,7 +11,7 @@ use app\index\model\Lists;
 class Index extends Controller
 {
 
-	private $path='/MessageBoard';
+	private $path='/MessageBoard/public';
 	public function check(){
 		if(!Session::has('name')){
 			Hook::listen('CheckAuth',$params);

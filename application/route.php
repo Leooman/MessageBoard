@@ -24,8 +24,8 @@ return [
    'out'=>'index/out',
    'check'=>'index/check',
    'addarticle'=>'index/addarticle',
-    'login'=>'login/index',
-    'login_submit'=>'login/login',
-    'regist'=>'regist/index',
-    'regist_submit'=>'regist/regist'
+   'login'=>'login/index',
+   'login_submit'=>'login/login',
+   'regist'=>'regist/index',
+   'regist_submit'=>'regist/regist'
 ];
