@@ -1,0 +1,661 @@
+[ 2017-04-27T11:41:55+08:00 ] ::1 ::1 GET /MessageBoard/public/
+[ log ] localhost/MessageBoard/public/ [运行时间：0.105006s][吞吐率：9.52req/s] [内存消耗：3,027.92kb] [文件加载：62]
+[ info ] [ LANG ] D:\xampp\htdocs\MessageBoard\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3026.3 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => '_pk_id.1.1fff=53b0d8206b4ba7d4.1490085802.2.1490174518.1490174516.; pgv_pvi=7568917504; PHPSESSID=a6aah60qkeqdjh8pq9f2qnr3o7',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Index->index[ D:\xampp\htdocs\MessageBoard\application\index\controller\Index.php ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] D:\xampp\htdocs\MessageBoard\public/../application/index\view\index\index.html [ array (
+  0 => 'name',
+  1 => 'list',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002000s ] mysql:dbname=message;host=127.0.0.1;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `article` [ RunTime:0.006000s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `article` LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT * FROM `article` LIMIT 0,5 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `comment` [ RunTime:0.007001s ]
+[ sql ] [ SQL ] SELECT * FROM `comment` WHERE  `article_id` = 1 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT * FROM `comment` WHERE  `article_id` = 2 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT * FROM `comment` WHERE  `article_id` = 3 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT * FROM `comment` WHERE  `article_id` = 4 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT * FROM `comment` WHERE  `article_id` = 5 [ RunTime:0.001000s ]
+
+---------------------------------------------------------------
+[ 2017-04-27T11:41:58+08:00 ] ::1 ::1 GET /MessageBoard/public/
+[ log ] localhost/MessageBoard/public/ [运行时间：0.092005s][吞吐率：10.87req/s] [内存消耗：2,886.12kb] [文件加载：60]
+[ info ] [ LANG ] D:\xampp\htdocs\MessageBoard\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3026.3 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => '_pk_id.1.1fff=53b0d8206b4ba7d4.1490085802.2.1490174518.1490174516.; pgv_pvi=7568917504; PHPSESSID=a6aah60qkeqdjh8pq9f2qnr3o7',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Index->index[ D:\xampp\htdocs\MessageBoard\application\index\controller\Index.php ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] D:\xampp\htdocs\MessageBoard\public/../application/index\view\index\index.html [ array (
+  0 => 'name',
+  1 => 'list',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001000s ] mysql:dbname=message;host=127.0.0.1;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `article` [ RunTime:0.005001s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `article` LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT * FROM `article` LIMIT 0,5 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `comment` [ RunTime:0.005000s ]
+[ sql ] [ SQL ] SELECT * FROM `comment` WHERE  `article_id` = 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT * FROM `comment` WHERE  `article_id` = 2 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT * FROM `comment` WHERE  `article_id` = 3 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT * FROM `comment` WHERE  `article_id` = 4 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT * FROM `comment` WHERE  `article_id` = 5 [ RunTime:0.001000s ]
+
+---------------------------------------------------------------
+[ 2017-04-27T11:42:00+08:00 ] ::1 ::1 GET /MessageBoard/public/read/1
+[ log ] localhost/MessageBoard/public/read/1 [运行时间：0.067202s][吞吐率：14.88req/s] [内存消耗：1,863.40kb] [文件加载：50]
+[ info ] [ LANG ] D:\xampp\htdocs\MessageBoard\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => NULL,
+    1 => 'index',
+    2 => 'read',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3026.3 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'referer' => 'http://localhost/MessageBoard/public/',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => '_pk_id.1.1fff=53b0d8206b4ba7d4.1490085802.2.1490174518.1490174516.; pgv_pvi=7568917504; PHPSESSID=a6aah60qkeqdjh8pq9f2qnr3o7',
+)
+[ info ] [ PARAM ] array (
+  'id' => '1',
+)
+[ info ] [ RUN ] app\index\controller\Index->read[ D:\xampp\htdocs\MessageBoard\application\index\controller\Index.php ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ VIEW ] D:\xampp\htdocs\MessageBoard\thinkphp\tpl\dispatch_jump.tpl [ array (
+  0 => 'code',
+  1 => 'msg',
+  2 => 'data',
+  3 => 'url',
+  4 => 'wait',
+) ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-04-27T11:42:03+08:00 ] ::1 ::1 GET /MessageBoard/public/login
+[ log ] localhost/MessageBoard/public/login [运行时间：0.059202s][吞吐率：16.89req/s] [内存消耗：1,869.27kb] [文件加载：48]
+[ info ] [ LANG ] D:\xampp\htdocs\MessageBoard\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => NULL,
+    1 => 'login',
+    2 => 'index',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3026.3 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'referer' => 'http://localhost/MessageBoard/public/read/1',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => '_pk_id.1.1fff=53b0d8206b4ba7d4.1490085802.2.1490174518.1490174516.; pgv_pvi=7568917504; PHPSESSID=a6aah60qkeqdjh8pq9f2qnr3o7',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\login->index[ D:\xampp\htdocs\MessageBoard\application\index\controller\Login.php ]
+[ info ] [ VIEW ] D:\xampp\htdocs\MessageBoard\public/../application/index\view\login\index.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-04-27T11:42:03+08:00 ] ::1 ::1 GET /MessageBoard/public/captcha.html
+[ log ] localhost/MessageBoard/public/captcha.html [运行时间：0.051003s][吞吐率：19.61req/s] [内存消耗：1,444.16kb] [文件加载：39]
+[ info ] [ LANG ] D:\xampp\htdocs\MessageBoard\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'method',
+  'method' => 
+  array (
+    0 => '\\think\\captcha\\CaptchaController',
+    1 => 'index',
+  ),
+  'var' => 
+  array (
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3026.3 Safari/537.36',
+  'accept' => 'image/webp,image/*,*/*;q=0.8',
+  'referer' => 'http://localhost/MessageBoard/public/login',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => '_pk_id.1.1fff=53b0d8206b4ba7d4.1490085802.2.1490174518.1490174516.; pgv_pvi=7568917504; PHPSESSID=a6aah60qkeqdjh8pq9f2qnr3o7',
+)
+[ info ] [ PARAM ] array (
+  'id' => NULL,
+)
+[ info ] [ RUN ] think\captcha\CaptchaController->index[ D:\xampp\htdocs\MessageBoard\vendor\topthink\think-captcha\src\CaptchaController.php ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-04-27T11:42:13+08:00 ] ::1 ::1 GET /MessageBoard/public/captcha.html?x=0.5733187732012153
+[ log ] localhost/MessageBoard/public/captcha.html?x=0.5733187732012153 [运行时间：0.044002s][吞吐率：22.73req/s] [内存消耗：1,444.41kb] [文件加载：39]
+[ info ] [ LANG ] D:\xampp\htdocs\MessageBoard\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'method',
+  'method' => 
+  array (
+    0 => '\\think\\captcha\\CaptchaController',
+    1 => 'index',
+  ),
+  'var' => 
+  array (
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3026.3 Safari/537.36',
+  'accept' => 'image/webp,image/*,*/*;q=0.8',
+  'referer' => 'http://localhost/MessageBoard/public/login',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => '_pk_id.1.1fff=53b0d8206b4ba7d4.1490085802.2.1490174518.1490174516.; pgv_pvi=7568917504; PHPSESSID=a6aah60qkeqdjh8pq9f2qnr3o7',
+)
+[ info ] [ PARAM ] array (
+  'x' => '0.5733187732012153',
+  'id' => NULL,
+)
+[ info ] [ RUN ] think\captcha\CaptchaController->index[ D:\xampp\htdocs\MessageBoard\vendor\topthink\think-captcha\src\CaptchaController.php ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-04-27T11:42:19+08:00 ] ::1 ::1 POST /MessageBoard/public/login_submit
+[ log ] localhost/MessageBoard/public/login_submit [运行时间：0.077005s][吞吐率：12.99req/s] [内存消耗：2,702.99kb] [文件加载：56]
+[ info ] [ LANG ] D:\xampp\htdocs\MessageBoard\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => NULL,
+    1 => 'login',
+    2 => 'login',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'content-length' => '78',
+  'cache-control' => 'max-age=0',
+  'origin' => 'http://localhost',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3026.3 Safari/537.36',
+  'content-type' => 'application/x-www-form-urlencoded',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'referer' => 'http://localhost/MessageBoard/public/login',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => '_pk_id.1.1fff=53b0d8206b4ba7d4.1490085802.2.1490174518.1490174516.; pgv_pvi=7568917504; PHPSESSID=a6aah60qkeqdjh8pq9f2qnr3o7',
+)
+[ info ] [ PARAM ] array (
+  'user_name' => 'leooman',
+  'user_passwd' => '123456',
+  'user_vertify' => 'ompw',
+)
+[ info ] [ RUN ] app\index\controller\login->login[ D:\xampp\htdocs\MessageBoard\application\index\controller\Login.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ VIEW ] D:\xampp\htdocs\MessageBoard\thinkphp\tpl\dispatch_jump.tpl [ array (
+  0 => 'code',
+  1 => 'msg',
+  2 => 'data',
+  3 => 'url',
+  4 => 'wait',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002000s ] mysql:dbname=message;host=127.0.0.1;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `user` [ RunTime:0.006000s ]
+[ sql ] [ SQL ] SELECT * FROM `user` WHERE  `user_name` = 'leooman'  AND `UserPassward` = '123456' LIMIT 1 [ RunTime:0.001000s ]
+
+---------------------------------------------------------------
+[ 2017-04-27T11:42:22+08:00 ] ::1 ::1 GET /MessageBoard/public/captcha.html
+[ log ] localhost/MessageBoard/public/captcha.html [运行时间：0.056602s][吞吐率：17.67req/s] [内存消耗：1,444.41kb] [文件加载：39]
+[ info ] [ LANG ] D:\xampp\htdocs\MessageBoard\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'method',
+  'method' => 
+  array (
+    0 => '\\think\\captcha\\CaptchaController',
+    1 => 'index',
+  ),
+  'var' => 
+  array (
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3026.3 Safari/537.36',
+  'accept' => 'image/webp,image/*,*/*;q=0.8',
+  'referer' => 'http://localhost/MessageBoard/public/login',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => '_pk_id.1.1fff=53b0d8206b4ba7d4.1490085802.2.1490174518.1490174516.; pgv_pvi=7568917504; PHPSESSID=a6aah60qkeqdjh8pq9f2qnr3o7',
+)
+[ info ] [ PARAM ] array (
+  'id' => NULL,
+)
+[ info ] [ RUN ] think\captcha\CaptchaController->index[ D:\xampp\htdocs\MessageBoard\vendor\topthink\think-captcha\src\CaptchaController.php ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-04-27T11:42:30+08:00 ] ::1 ::1 GET /MessageBoard/public/captcha.html?x=0.4409417138350169
+[ log ] localhost/MessageBoard/public/captcha.html?x=0.4409417138350169 [运行时间：0.044002s][吞吐率：22.73req/s] [内存消耗：1,444.66kb] [文件加载：39]
+[ info ] [ LANG ] D:\xampp\htdocs\MessageBoard\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'method',
+  'method' => 
+  array (
+    0 => '\\think\\captcha\\CaptchaController',
+    1 => 'index',
+  ),
+  'var' => 
+  array (
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3026.3 Safari/537.36',
+  'accept' => 'image/webp,image/*,*/*;q=0.8',
+  'referer' => 'http://localhost/MessageBoard/public/login',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => '_pk_id.1.1fff=53b0d8206b4ba7d4.1490085802.2.1490174518.1490174516.; pgv_pvi=7568917504; PHPSESSID=a6aah60qkeqdjh8pq9f2qnr3o7',
+)
+[ info ] [ PARAM ] array (
+  'x' => '0.4409417138350169',
+  'id' => NULL,
+)
+[ info ] [ RUN ] think\captcha\CaptchaController->index[ D:\xampp\htdocs\MessageBoard\vendor\topthink\think-captcha\src\CaptchaController.php ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-04-27T11:42:32+08:00 ] ::1 ::1 GET /MessageBoard/public/captcha.html?x=0.15707832006455447
+[ log ] localhost/MessageBoard/public/captcha.html?x=0.15707832006455447 [运行时间：0.045002s][吞吐率：22.22req/s] [内存消耗：1,444.66kb] [文件加载：39]
+[ info ] [ LANG ] D:\xampp\htdocs\MessageBoard\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'method',
+  'method' => 
+  array (
+    0 => '\\think\\captcha\\CaptchaController',
+    1 => 'index',
+  ),
+  'var' => 
+  array (
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3026.3 Safari/537.36',
+  'accept' => 'image/webp,image/*,*/*;q=0.8',
+  'referer' => 'http://localhost/MessageBoard/public/login',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => '_pk_id.1.1fff=53b0d8206b4ba7d4.1490085802.2.1490174518.1490174516.; pgv_pvi=7568917504; PHPSESSID=a6aah60qkeqdjh8pq9f2qnr3o7',
+)
+[ info ] [ PARAM ] array (
+  'x' => '0.15707832006455447',
+  'id' => NULL,
+)
+[ info ] [ RUN ] think\captcha\CaptchaController->index[ D:\xampp\htdocs\MessageBoard\vendor\topthink\think-captcha\src\CaptchaController.php ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-04-27T11:42:34+08:00 ] ::1 ::1 GET /MessageBoard/public/captcha.html?x=0.10382573319778765
+[ log ] localhost/MessageBoard/public/captcha.html?x=0.10382573319778765 [运行时间：0.044003s][吞吐率：22.73req/s] [内存消耗：1,444.69kb] [文件加载：39]
+[ info ] [ LANG ] D:\xampp\htdocs\MessageBoard\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'method',
+  'method' => 
+  array (
+    0 => '\\think\\captcha\\CaptchaController',
+    1 => 'index',
+  ),
+  'var' => 
+  array (
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3026.3 Safari/537.36',
+  'accept' => 'image/webp,image/*,*/*;q=0.8',
+  'referer' => 'http://localhost/MessageBoard/public/login',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => '_pk_id.1.1fff=53b0d8206b4ba7d4.1490085802.2.1490174518.1490174516.; pgv_pvi=7568917504; PHPSESSID=a6aah60qkeqdjh8pq9f2qnr3o7',
+)
+[ info ] [ PARAM ] array (
+  'x' => '0.10382573319778765',
+  'id' => NULL,
+)
+[ info ] [ RUN ] think\captcha\CaptchaController->index[ D:\xampp\htdocs\MessageBoard\vendor\topthink\think-captcha\src\CaptchaController.php ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-04-27T11:42:41+08:00 ] ::1 ::1 POST /MessageBoard/public/login_submit
+[ log ] localhost/MessageBoard/public/login_submit [运行时间：0.078005s][吞吐率：12.82req/s] [内存消耗：2,702.58kb] [文件加载：56]
+[ info ] [ LANG ] D:\xampp\htdocs\MessageBoard\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => NULL,
+    1 => 'login',
+    2 => 'login',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'content-length' => '78',
+  'cache-control' => 'max-age=0',
+  'origin' => 'http://localhost',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3026.3 Safari/537.36',
+  'content-type' => 'application/x-www-form-urlencoded',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'referer' => 'http://localhost/MessageBoard/public/login',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => '_pk_id.1.1fff=53b0d8206b4ba7d4.1490085802.2.1490174518.1490174516.; pgv_pvi=7568917504; PHPSESSID=a6aah60qkeqdjh8pq9f2qnr3o7',
+)
+[ info ] [ PARAM ] array (
+  'user_name' => 'leooman',
+  'user_passwd' => '123456',
+  'user_vertify' => 'y6jw',
+)
+[ info ] [ RUN ] app\index\controller\login->login[ D:\xampp\htdocs\MessageBoard\application\index\controller\Login.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ VIEW ] D:\xampp\htdocs\MessageBoard\thinkphp\tpl\dispatch_jump.tpl [ array (
+  0 => 'code',
+  1 => 'msg',
+  2 => 'data',
+  3 => 'url',
+  4 => 'wait',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001000s ] mysql:dbname=message;host=127.0.0.1;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `user` [ RunTime:0.006000s ]
+[ sql ] [ SQL ] SELECT * FROM `user` WHERE  `user_name` = 'leooman'  AND `UserPassward` = '123456' LIMIT 1 [ RunTime:0.000000s ]
+
+---------------------------------------------------------------
+[ 2017-04-27T11:42:44+08:00 ] ::1 ::1 GET /MessageBoard/public/
+[ log ] localhost/MessageBoard/public/ [运行时间：0.105204s][吞吐率：9.51req/s] [内存消耗：2,885.98kb] [文件加载：60]
+[ info ] [ LANG ] D:\xampp\htdocs\MessageBoard\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3026.3 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'referer' => 'http://localhost/MessageBoard/public/login_submit',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => '_pk_id.1.1fff=53b0d8206b4ba7d4.1490085802.2.1490174518.1490174516.; pgv_pvi=7568917504; PHPSESSID=a6aah60qkeqdjh8pq9f2qnr3o7',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Index->index[ D:\xampp\htdocs\MessageBoard\application\index\controller\Index.php ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] D:\xampp\htdocs\MessageBoard\public/../application/index\view\index\index.html [ array (
+  0 => 'name',
+  1 => 'list',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001000s ] mysql:dbname=message;host=127.0.0.1;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `article` [ RunTime:0.005000s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `article` LIMIT 1 [ RunTime:0.001001s ]
+[ sql ] [ SQL ] SELECT * FROM `article` LIMIT 0,5 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `comment` [ RunTime:0.006000s ]
+[ sql ] [ SQL ] SELECT * FROM `comment` WHERE  `article_id` = 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT * FROM `comment` WHERE  `article_id` = 2 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT * FROM `comment` WHERE  `article_id` = 3 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT * FROM `comment` WHERE  `article_id` = 4 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT * FROM `comment` WHERE  `article_id` = 5 [ RunTime:0.000000s ]
+
+---------------------------------------------------------------
+[ 2017-04-27T11:42:52+08:00 ] ::1 ::1 GET /MessageBoard/public/?page=2
+[ log ] localhost/MessageBoard/public/?page=2 [运行时间：0.093605s][吞吐率：10.68req/s] [内存消耗：2,875.77kb] [文件加载：60]
+[ info ] [ LANG ] D:\xampp\htdocs\MessageBoard\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3026.3 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'referer' => 'http://localhost/MessageBoard/public/',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => '_pk_id.1.1fff=53b0d8206b4ba7d4.1490085802.2.1490174518.1490174516.; pgv_pvi=7568917504; PHPSESSID=a6aah60qkeqdjh8pq9f2qnr3o7',
+)
+[ info ] [ PARAM ] array (
+  'page' => '2',
+)
+[ info ] [ RUN ] app\index\controller\Index->index[ D:\xampp\htdocs\MessageBoard\application\index\controller\Index.php ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] D:\xampp\htdocs\MessageBoard\public/../application/index\view\index\index.html [ array (
+  0 => 'name',
+  1 => 'list',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001000s ] mysql:dbname=message;host=127.0.0.1;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `article` [ RunTime:0.006001s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `article` LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT * FROM `article` LIMIT 5,5 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `comment` [ RunTime:0.005000s ]
+[ sql ] [ SQL ] SELECT * FROM `comment` WHERE  `article_id` = 6 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT * FROM `comment` WHERE  `article_id` = 7 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT * FROM `comment` WHERE  `article_id` = 8 [ RunTime:0.000000s ]
+
+---------------------------------------------------------------
+[ 2017-04-27T11:42:53+08:00 ] ::1 ::1 GET /MessageBoard/public/add
+[ log ] localhost/MessageBoard/public/add [运行时间：0.051602s][吞吐率：19.38req/s] [内存消耗：1,822.20kb] [文件加载：47]
+[ info ] [ LANG ] D:\xampp\htdocs\MessageBoard\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => NULL,
+    1 => 'index',
+    2 => 'add',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3026.3 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'referer' => 'http://localhost/MessageBoard/public/?page=2',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => '_pk_id.1.1fff=53b0d8206b4ba7d4.1490085802.2.1490174518.1490174516.; pgv_pvi=7568917504; PHPSESSID=a6aah60qkeqdjh8pq9f2qnr3o7',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Index->add[ D:\xampp\htdocs\MessageBoard\application\index\controller\Index.php ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ VIEW ] D:\xampp\htdocs\MessageBoard\public/../application/index\view\index\add.html [ array (
+  0 => 'name',
+) ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
