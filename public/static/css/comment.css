@@ -1,0 +1,11 @@
+
+/*UMEditor样式修正*/
+.well{
+    overflow: auto;
+}
+.well h6{
+    clear: both;
+}
+.panel-body p{
+	overflow: auto;
+}
