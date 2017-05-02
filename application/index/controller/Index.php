@@ -44,6 +44,7 @@ class Index extends Controller
 		$this->check();
 		$this->login();
 		$article=Lists::get($id);
+		$article->content=htmlspecialchars_decode($article->content);
 		$comments=$article->comments()->select();
 		// $comments=Db::name('comment')->where('article_id',$id)->select();
 		$this->assign('article',$article);

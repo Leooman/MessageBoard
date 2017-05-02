@@ -1,0 +1,21 @@
+<input type="text" name="content" hidden class='contents'>
+<script type="text/plain" id="myEditor" style="width: 100%"></script>
+<script>
+$opt={toolbar:[
+			'source |',
+            'undo redo | bold italic underline strikethrough | superscript subscript | forecolor backcolor |',
+            'horizontal | insertorderedlist insertunorderedlist | link unlink | selectall cleardoc' ,
+            '| justifyleft justifycenter justifyright justifyjustify | paragraph fontfamily fontsize',
+            '| emotion image video',
+            ' | fullscreen'
+    ]};
+    var um = UM.getEditor('myEditor',$opt);
+ function getContent(){
+  return um.getContent();
+ }
+ $(function(){
+  $('button[type="submit"]').on('click',function(){
+    $('.contents').val(getContent())
+  })
+ })
+</script>
