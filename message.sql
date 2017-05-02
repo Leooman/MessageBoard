@@ -3,9 +3,9 @@
 -- http://www.phpmyadmin.net
 --
 -- Host: 127.0.0.1
--- Generation Time: 2017-04-08 08:35:50
--- 服务器版本： 10.1.9-MariaDB
--- PHP Version: 5.6.15
+-- Generation Time: 2017-05-02 10:53:29
+-- 服务器版本： 10.1.19-MariaDB
+-- PHP Version: 5.6.28
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 SET time_zone = "+00:00";
@@ -46,7 +46,8 @@ INSERT INTO `article` (`id`, `title`, `content`, `create_time`, `update_time`) V
 (5, '最是那一低头的温柔', '恰似水莲花不胜凉风的娇羞', 1491571494, 0),
 (6, '几何智力题', '假如你被关在一个没有门窗，四壁，天花板，地板雪白的房间。房间中只有一支铅笔和一个等腰直角三角形木片。逃出房间的唯一方法是精确地画出一个等边三角形。怎么办?', 1491571657, 0),
 (7, '乐山大佛是世界最大', '世界上还有比乐山大佛更宏伟的建筑吗？', 1491571834, 0),
-(8, '文字和心理', '-听说你学心理学？\r\n-嗯。\r\n-那你知不知道我心里在想什么？\r\n-……\r\n\r\n虽然我不知道你在想什么，但我可以用文字加上原理，给你科普有趣的小知识。', 1491571994, 0);
+(8, '文字和心理', '-听说你学心理学？\r\n-嗯。\r\n-那你知不知道我心里在想什么？\r\n-……\r\n\r\n虽然我不知道你在想什么，但我可以用文字加上原理，给你科普有趣的小知识。', 1491571994, 0),
+(9, 'UMEditor测试', '&lt;p&gt;&lt;strong&gt;实例化UMEditor&lt;/strong&gt;&lt;/p&gt;&lt;hr/&gt;&lt;p&gt;添加表情测试：&lt;img src=&quot;http://img.baidu.com/hi/jx2/j_0024.gif&quot;/&gt;&lt;img src=&quot;http://img.baidu.com/hi/tsj/t_0003.gif&quot;/&gt;&lt;/p&gt;&lt;p&gt;添加图片测试：&lt;/p&gt;&lt;p&gt;&lt;img src=&quot;http://localhost/MessageBoard/public/static/um/php/upload/20170502/14937147416805.png&quot; style=&quot;&quot;/&gt;&lt;/p&gt;&lt;p&gt;&lt;img src=&quot;http://localhost/MessageBoard/public/static/um/php/upload/20170502/14937147568048.png&quot; style=&quot;&quot;/&gt;&lt;/p&gt;&lt;p&gt;添加视频测试【MP4格式】：&lt;video width=&quot;300&quot; height=&quot;200&quot; style=&quot;float:none&quot; controls=&quot;&quot; autoplay=&quot;&quot; src=&quot;http://demo.itivy.com/html5-canvas-video/BigBuckBunny_640x360.mp4&quot;&gt;&lt;/video&gt;&lt;/p&gt;', 1493714823, 0);
 
 -- --------------------------------------------------------
 
@@ -89,7 +90,8 @@ INSERT INTO `comment` (`id`, `article_id`, `username`, `content`, `create_time`,
 (19, 7, '西蜀之去南海', '只是说造像的话，好像狮身人面更大', 1491571950, 0),
 (20, 8, '权利_如此卑微', '我猜想资料贴或学术贴如果理论性太强\r\n可能大家的兴致就不高\r\n因此希望借此贴以一个不一样的方式\r\n分享那些心理学的小知识\r\n我会以写一段文字，对应一段原理解释的形式来完成这篇贴子\r\n文字的风格和形式不定\r\n本贴所有文字部分除注明出处外都是原创\r\n原理部分会结合我的所学并查阅资料进行整理\r\n如果想要转载，请先征得我的同意\r\n祝你看帖愉快\r\n（我不介意插楼，请随意）', 1491572028, 0),
 (21, 8, '权利_如此卑微', '【1】\r\n我和你曾分散在世界上的两个角落，没有任何交集。有一天你闯入我的视线，我却仿佛看不见。因为你身上的味道沁人心脾，我闭上眼，贪婪地呼吸，那也许是灵魂深处最原始的香气。但是当我睁开双眼，却发现你已经不见了，此地空留你的余香。我每天都想见到你。\r\n让我惊喜的是，你每天都会按时出现。终于有一天，我忍不住张开双臂拥抱你，再也不愿分离。\r\n我们相爱了。我终于知道，什么叫做一日不见，如隔三秋。你太可爱了，哪里都可爱。\r\n“他身上好像没有味道了。”某天我听到这句话，错愕地站在原地。我牵起你的手，把头靠近你的胸口，深呼吸。果然，什么味道也没有了。可是为什么，我的手还紧紧地攥着你的手，我也不愿抬起头。我听着你的心跳。\r\n我现在爱你，好像和香气没关系。', 1491572058, 0),
-(23, 4, '永恒', '测试一下', 1491572799, 0);
+(23, 4, '永恒', '测试一下', 1491572799, 0),
+(24, 9, '评论测试', '<p><em><img src="http://img.baidu.com/hi/jx2/j_0002.gif"/></em><br/></p><p><em><img src="http://localhost/MessageBoard/public/static/um/php/upload/20170502/14937149553093.jpg" style="width: 183px; height: 306px;"/></em></p><p><video width="420" height="280" style="float:right" controls="" autoplay="" src="http://demo.itivy.com/html5-canvas-video/BigBuckBunny_640x360.mp4"></video><em></em></p>', 1493715004, 0);
 
 -- --------------------------------------------------------
 
@@ -141,12 +143,12 @@ ALTER TABLE `user`
 -- 使用表AUTO_INCREMENT `article`
 --
 ALTER TABLE `article`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=9;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=10;
 --
 -- 使用表AUTO_INCREMENT `comment`
 --
 ALTER TABLE `comment`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=24;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=25;
 --
 -- 使用表AUTO_INCREMENT `user`
 --
